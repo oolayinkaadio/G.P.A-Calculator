@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POLYTECHNIC G.P.A CALCULATOR</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <p class="header--text"> POLYTECHNIC G.P.A CALCULATOR</p>
+        </div>
+
+
+        <!-- <br> -->
+
+        <div class="content">
+            <!-- Insert alert message here-->
+            <!-- <div class="alert success">
+                Something went wrong
+            </div> -->
+
+
+            <div class="grading--content">
+
+                <div class="grading--content__box-1">
+                    <!-- POLYTECHNIC GRADING -->
+                    <table class="polytechnic--table">
+                        <th>GRADING</th>
+                        <tbody>
+                            <tr>
+                                <td class="polytechnic-grade">A1</td>
+                                <td><input type="text" value="4.00" class="polytechnic-grade-value"></td>
+                            </tr>
+                            <tr>
+                                <td class="polytechnic-grade">A2</td>
+                                <td><input type="text" value="3.50" class="polytechnic-grade-value"></td>
+                            </tr>
+                            <tr>
+                                <td class="polytechnic-grade">B1</td>
+                                <td><input type="text" value="3.25" class="polytechnic-grade-value"></td>
+                            </tr>
+                            <tr>
+                                <td class="polytechnic-grade">B2</td>
+                                <td><input type="text" value="3.00" class="polytechnic-grade-value"></td>
+                            </tr>
+                            <tr>
+                                <td class="polytechnic-grade">C1</td>
+                                <td><input type="text" value="2.75" class="polytechnic-grade-value"></td>
+                            </tr>
+                            <tr>
+                                <td class="polytechnic-grade">C2</td>
+                                <td><input type="text" value="2.50" class="polytechnic-grade-value"></td>
+                            </tr>
+                            <tr>
+                                <td class="polytechnic-grade">D1</td>
+                                <td><input type="text" value="2.25" class="polytechnic-grade-value"></td>
+                            </tr>
+                            <tr>
+                                <td class="polytechnic-grade">D2</td>
+                                <td><input type="text" value="2.00" class="polytechnic-grade-value"></td>
+                            </tr>
+                            <tr>
+                                <td class="polytechnic-grade">F</td>
+                                <td><input type="text" value="0.00" class="polytechnic-grade-value"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="grading--content__box-2">
+
+                    <div class="box-2--content-1">
+
+                        <div class="section-a">
+                            <div class="total_units">
+                                <div class="total_units--text">TOTAL UNITS</div>
+                                <div class="total_units--output">00</div>
+                            </div>
+
+                            <div class="gpa">
+                                <div class="gpa--text">GRADE POINT AVERAGE</div>
+                                <div class="gpa--output">0.00</div>
+                            </div>
+                        </div>
+
+                        <div class="section-b">
+                            <div class="total_units_points">
+                                <div class="total_units_points--text">TOTAL UNITS POINT</div>
+                                <div class="total_units_points--output">00</div>
+                            </div>
+
+                            <div class="cgpa">
+                                <div class="cgpa--text">CUMULATIVE GRADE POINT AVERAGE</div>
+                                <div class="cgpa--output">0.00</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="box-2--content-2">
+                        <h3>NOTE:</h3>
+                        <ol type="1">
+                            <li>You can edit the value of each grade point in the grading box, and adjust it to your school's grade point, if the values does not match the grade</li>
+                            <li>You can only calculate CGPA for a single semester at a time</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="course--input--box">
+                <form class="course--input--box-1">
+                    <div class="input-box">
+                        <label for="course-code">COURSE CODE</label>
+                        <input type="text" id="course-code">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="course-unit">COURSE UNIT</label>
+                        <input type="text" id="course-unit">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="course-grade-point">COURSE GRADE POINT</label>
+                        <input type="text" id="course-grade-point">
+                    </div>
+                </form>
+
+                <div class="course--input--box-2">
+                    <button class="submit--course">SUBMIT COURSE</button>
+                    <button class="calculate--cgpa">CALCULATE CGPA</button>
+                </div>
+            </div>
+
+
+            <div class="course--output--box">
+                <table class="course--output--table">
+
+                    <tr>
+                        <th>COURSE CODE</th>
+                        <th>COURSE UNIT</th>
+                        <th>GRADE POINT</th>
+                        <th>TOTAL POINT</th>
+                        <th>DELETE A COURSE</th>
+                    </tr>
+
+                    <tbody class="course-list">
+                        <!-- <tr>
+                            <td class="course-code">A</td>
+                            <td class="course-unit">2.00</td>
+                            <td>C</td>
+                            <td class="total-course-unit">8.00</td>
+                            <td><span class="delete">X</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="course-code">A</td>
+                            <td class="course-unit">2.00</td>
+                            <td>C</td>
+                            <td class="total-course-unit">8.00</td>
+                        <td><span class="delete">X</span></td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="polyApp.js"></script>
+</body>
+
+</html>

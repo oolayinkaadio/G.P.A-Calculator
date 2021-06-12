@@ -1,0 +1,331 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.alert {
+    width: inherit;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: calc(0.1rem + 0.4vw);
+    font-size: calc(0.2rem + 0.6vw);
+    font-weight: 600;
+}
+
+.alert.success {
+    background-color: rgb(130, 242, 186);
+}
+
+.alert.error {
+    background-color: rgb(243, 110, 110);
+}
+
+.container {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.modal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5
+    /* background: linear-gradient(to right, #bdc3c7, #2c3e50); */
+}
+
+.modal--content__box {
+    height: 20vh;
+    width: 40vw;
+    background: #bdc3c7;
+    background-color: #51A5EE;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 15px;
+    font-size: calc(0.3rem + 0.4vw);
+}
+
+.modal--content__box .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.modal--content__box .buttons button {
+    width: 10vw;
+    height: 35px;
+    font-size: calc(0.4rem + 0.5vw);
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.modal--content__box .buttons button:hover,
+.modal--content__box .buttons button:active {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    /* visibility: hidden; */
+}
+
+
+/* STYLING THE HEADER */
+
+.header {
+    width: inherit;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    /* left: 0; */
+    margin-bottom: 15vw;
+    height: 2vw;
+    background-color: #789fc4;
+}
+
+.header p.header--text {
+    /* font-stretch: expanded; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: calc(0.5rem + 0.7vw);
+    letter-spacing: 4px;
+}
+
+body .content {
+    margin-top: 50px;
+    background-color: #7fa3c6;
+}
+
+
+/* GRADING BOX */
+
+.grading--content {
+    display: flex;
+    height: 20rem;
+    gap: 5vw;
+    /* border-bottom: 1px dashed darkcyan; */
+    padding: 1.5vw;
+    /* background-color: cornflowerblue; */
+    margin-bottom: 0.5rem;
+}
+
+.grading--content__box-1 {
+    flex: 1;
+}
+
+.grading--content__box-2 {
+    flex: 3;
+}
+
+.grading--content__box-2 .box-2--content-1 {
+    height: 5rem;
+    margin: 0.8rem 0;
+    /* background-color: red; */
+    display: flex;
+    font-weight: 300;
+    /* padding: 5px; */
+}
+
+.grading--content__box-1 .polytechnic--table th,
+.grading--content__box-1 .university--table th {
+    /* background-color: red; */
+    text-align: center;
+}
+
+.grading--content__box-1 .polytechnic--table,
+.grading--content__box-1 .university--table,
+.grading--content__box-1 .polytechnic--table td,
+.grading--content__box-1 .university--table td,
+.grading--content__box-1 .polytechnic--table tr,
+.grading--content__box-1 .university--table tr {
+    border: 1px solid black;
+    border-spacing: 3px;
+    text-align: center;
+}
+
+.grading--content__box-1 .polytechnic--table input,
+.grading--content__box-1 .university--table input {
+    width: 4rem;
+    text-align: center;
+}
+
+.grading--content__box-2 .box-2--content-1 .section-a,
+.grading--content__box-2 .box-2--content-1 .section-b {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: calc(0.2rem + 0.6vw);
+    /* height: 6vh; */
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.grading--content__box-2 .box-2--content-1 .section-a {
+    border-right: 2px solid black;
+}
+
+.grading--content__box-2 .box-2--content-1 .section-a .total_units,
+.grading--content__box-2 .box-2--content-1 .section-a .gpa,
+.grading--content__box-2 .box-2--content-1 .section-b .total_units_points,
+.grading--content__box-2 .box-2--content-1 .section-b .cgpa {
+    border: 1px solid black;
+    margin-bottom: 0.5rem;
+    display: flex;
+}
+
+.total_units--text,
+.gpa--text {
+    flex: 1;
+    border-right: 1px solid black;
+}
+
+.total_units_points--text,
+.cgpa--text {
+    flex: 2.5;
+    border-right: 1px solid black;
+}
+
+.total_units--output,
+.gpa--output,
+.total_units_points--output,
+.cgpa--output {
+    flex: 1;
+    text-align: center;
+}
+
+.grading--content__box-2 .box-2--content-1 .section-b {
+    /* flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 6vh; */
+    background-color: whitesmoke;
+}
+
+
+/* 2nd box that contains NOTE */
+
+.grading--content__box-2 .box-2--content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 25px;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+
+/* INPUT BOX SECTION */
+
+.course--input--box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2vw;
+    height: 150px;
+    /* background-color: purple; */
+    margin-bottom: 2vh;
+}
+
+.course--input--box-1,
+.course--input--box-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.course--input--box-1 label,
+.course--input--box-1 input {
+    display: block
+}
+
+.course--input--box-1 label {
+    font-size: calc(0.6rem + 0.5vw);
+    font-weight: 300;
+    /* margin-bottom: 0.3rem; */
+}
+
+.input-box input,
+select.grade-point--1,
+select.grade-point--2 {
+    width: 12vw;
+    height: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.course--input--box-2 {
+    padding: 0 8vw;
+    /* margin-bottom: 2vh; */
+}
+
+.course--input--box-2 button {
+    width: 15vw;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.course--input--box-2 button:hover,
+.course--input--box-2 button:active {
+    background-color: #d1d2d3;
+    cursor: pointer;
+}
+
+
+/* COURSE OUTPUT */
+
+.course--output--box {
+    width: inherit;
+}
+
+.course--output--table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.course--output--table td,
+.course--output--table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.course--output--table th {
+    background-color: #51667b;
+}
+
+.course--output--table tr:nth-child(odd) {
+    background-color: #c5d4e5;
+}
+
+.course--output--table tr:nth-child(even) {
+    background-color: #dfe7f0;
+}
+
+
+/* Delete Button */
+
+.delete {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
